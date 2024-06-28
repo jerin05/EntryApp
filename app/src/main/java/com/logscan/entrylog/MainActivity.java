@@ -1,5 +1,6 @@
 package com.logscan.entrylog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -29,7 +30,13 @@ AppCompatButton b1;
             public void onClick(View v) {
                 String getUname= ed1.getText().toString();
                 String getPass= ed2.getText().toString();
-                Toast.makeText(getApplicationContext(),getUname,Toast.LENGTH_SHORT).show();
+                if(getUname.equals("admin") && getPass.equals("1234")){
+                    Intent i= new Intent(getApplicationContext(),admin.class);
+                    startActivity(i);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Invalid Credentials",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
