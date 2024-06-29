@@ -1,10 +1,16 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#3F2F45"
+    android:background="@drawable/exampledrawable"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="30px"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<TextView
+<ImageView
+    android:layout_width="530px"
+    android:layout_height="560px"
+    android:background="@drawable/fisat"
+    />
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Name"
@@ -14,8 +20,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your name"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
         android:id="@+id/name"
+        android:drawableRight="@drawable/baseline_person_24"
         />
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +36,8 @@
         android:hint="Enter your  admission no"
          android:inputType="number"
         android:id="@+id/admno"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
+        android:drawableRight="@drawable/baseline_numbers_24"
         />
     <TextView
         android:layout_width="match_parent"
@@ -43,7 +51,8 @@
         android:hint="Enter your system no"
         android:inputType="number"
         android:id="@+id/sysno"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
+        android:drawableRight="@drawable/baseline_computer_24"
         />
     <TextView
         android:layout_width="match_parent"
@@ -56,7 +65,8 @@
         android:layout_height="wrap_content"
         android:hint="Enter your department"
         android:id="@+id/dep"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
+        android:drawableRight="@drawable/baseline_menu_book_24"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"

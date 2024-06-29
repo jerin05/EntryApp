@@ -1,22 +1,29 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#3F2F45"
+    android:background="@drawable/exampledrawable"
     android:gravity="center"
     android:padding="30px"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="530px"
+        android:layout_height="560px"
+        android:background="@drawable/fisat"
+         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Username"
         android:textColor="#EBEEEF"
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your username"
         android:id="@+id/uname"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
         />
     <TextView
         android:layout_width="match_parent"
@@ -30,7 +37,8 @@
         android:hint="Enter your Password"
         android:inputType="textPassword"
         android:id="@+id/pass"
-        android:textColorHint="#5D5F5F"
+        android:textColorHint="#9DA0A0"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
